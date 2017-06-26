@@ -1,0 +1,12 @@
+Changes since 2.x:
+* Light penetration: Light can now softly bleed into a surface.
+	* Can be used to make the lit edges of an object glow, or for a self shadowing effect.
+	* Helps hide resolution shadow resolution artifacts.
+* HDR support:
+	* Lightmap rendering is automatically performed in HDR when attached to an HDR camera.
+	* Lights now have an additional intensity property when using linear light blending.
+* Editor scene preview of lighting effects.
+* Now works with Metal rendering on iOS with the latest Unity versions. (Earlier versions had shader compiler bugs)
+* Disable DirectX workarounds on Windows when using the OpenGL renderer.
+* Better support for batching of lit sprites.
+* Improved tooltips.
